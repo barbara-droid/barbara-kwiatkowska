@@ -103,13 +103,52 @@ header .menu a:hover {
 
 /*About me*/ 
 .about-me-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 300px;
   background-image: url("img/background.jpg");
   background-size: cover;
 }
 
+.about-me-picture .about-me-title {
+  text-align: center;
+  font-size: 30px;
+  color: var(--white);
+}
+
 .about-me-description {
+  display: flex;
+  color: var(--secondary);
+}
+
+.about-me-description .about-me-column {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-description .about-me-column-text {
 
 }
+
+.about-me-description img {
+  max-width: 60%;
+  margin: 20px;
+}
+
+.about-me-description h2 {}
+.about-me-description p {}
+
+@media (max-width: 420px) {
+  .about-me-description {
+    flex-direction: column;
+  }
+  .about-me-description .about-me-column {
+    width: 100%;
+  } 
+}
+
 
