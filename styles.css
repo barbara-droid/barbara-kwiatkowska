@@ -1,6 +1,7 @@
 /* HEADER */
 :root {
   --greylight: #eee;
+  --darkblue: #447fbf;
 }
 
 body {
@@ -130,25 +131,94 @@ header .menu a:hover {
   align-items: center;
 }
 
-.about-me-description .about-me-column-text {
-
-}
-
 .about-me-description img {
   max-width: 60%;
   margin: 20px;
 }
 
-.about-me-description h2 {}
-.about-me-description p {}
-
 @media (max-width: 420px) {
   .about-me-description {
     flex-direction: column;
+    padding: 10px;
   }
   .about-me-description .about-me-column {
     width: 100%;
-  } 
+  }
+  .about-me-column-text h1 {
+    font-size: 25px;
+    text-align: center;
+  }
 }
 
+/*Skills*/ 
 
+.skills .content-title {
+  color: var(--secondary);
+  text-align: center;
+  margin: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+  color: var(--secondary);
+}
+
+.skills-item {
+  width: 50%;
+  padding: 10px 20px;
+}
+
+.skills-item .skill-title {
+  text-align: center;
+}
+
+.skill-level {
+  position: relative;
+  width: 80%;
+  height: 20px;
+  border: 1px solid var(--darkblue);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.skill-level::before {
+  position: absolute;
+  height: 20px;
+  background-color: var(--darkblue);
+  content: "";
+  z-index: 0;
+  border-radius: 20px;
+  top: -1px;
+}
+
+.skill-level-1::before {
+  width: 20%;
+}
+
+.skill-level-2::before {
+  width: 40%;
+}
+
+.skill-level-3::before {
+  width: 60%;
+}
+
+.skill-level-4::before {
+  width: 80%;
+}
+
+.skill-level-5::before {
+  width: 100%;
+}
+
+@media (max-width: 420px) {
+  .skills-list {
+    flex-direction: row;
+    padding: 10px;
+  }
+  .skills-item {
+    width: 100%;
+  }
+}
