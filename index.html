@@ -12,10 +12,9 @@
   <!-- HEADER - Menu i obrazek -->
   <header>
    <nav id="menu" role="navigation"></nav>
-    <div id="menu-trigger"><span></span></div>
     <ul class="menu">
       <li class="mobile-title">Menu: </li>
-      <li><a href="/">About me</a></li>
+      <li><a href="index.html">About me</a></li>
       <li><a href="skills.html">Skills</a></li>
       <li><a href="projects.html">My Projects</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -28,11 +27,21 @@
   <footer>
     <div>my contact data</div>
     <div class="contact">
-      <div class="contact-column">contact form</div>
-      <div class="contact-column"><form action="" class="form">
+      <div class="contact-column">
+        <div class="contact-data">
+          Barbara Kwiatkowska <br/>
+          Mystreet 1/1 <br/>
+          00-222 City <br/>
+          Poland <br/>
+          Phone: (+48) 001-000-111
+        </div>
+      </div>
+      <div class="contact-column">
+        <form class="contact-form" action="" class="form">
+          <p class="form-header">Contact with me!</p>
           <input type="text" name="name" placeholder="Name"><br>
           <input type="e-mail" name="e-mail" placeholder="Enter your e-mail address"><br>
-          <textarea name="message" cols="50" rows="10" placeholder="Message:"></textarea><br>
+          <textarea name="message" rows="5" placeholder="Message:"></textarea><br>
           <div class="form-submit">
             <input type="submit" value="Sent">
           </div>
