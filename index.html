@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Strona barbary</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Strona barbary</title>
 </head>
 <body>
-    <div>content</div>
+  <!-- HEADER - Menu i obrazek -->
+  <header>
+   <nav id="menu" role="navigation"></nav>
+    <div id="menu-trigger"><span></span></div>
+    <ul class="menu">
+      <li class="mobile-title">Menu: </li>
+      <li><a href="/">About me</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">My Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+   </nav>
+  </header>
+  <!-- CONTENT - Sekcja o mnie -->
+  <div class="content">content</div>
+  <!-- FOOTER - 2 Kolumny - Formularz Kontakt -->
+  <footer>
+    <div>my contact data</div>
+    <div class="contact">
+      <div class="contact-column">contact form</div>
+      <div class="contact-column"><form action="" class="form">
+          <input type="text" name="name" placeholder="Name"><br>
+          <input type="e-mail" name="e-mail" placeholder="Enter your e-mail address"><br>
+          <textarea name="message" cols="50" rows="10" placeholder="Message:"></textarea><br>
+          <div class="form-submit">
+            <input type="submit" value="Sent">
+          </div>
+        </form>
+      </div>   
+    </div>
+  </footer>
 </body>
 </html>
